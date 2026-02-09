@@ -18,9 +18,9 @@ document.getElementById("openBtn").onclick = () => {
 };
 
 function showResult(value) {
-    resultText.textContent = `🎉 Bạn đã nhận được ${value.toLocaleString()} đ 🎉`;
     popup.style.display = "flex";
     moneyImg.src = `./images/${value}.jpg`;
+    resultText.textContent = `🎉 Bạn đã nhận được ${value.toLocaleString()} đ 🎉`;
     startFireworks();
 }
 
