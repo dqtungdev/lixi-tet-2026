@@ -1,0 +1,95 @@
+* {
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+html,
+body {
+    margin: 0;
+    height: 100%;
+}
+
+body {
+    background: url("./images/mai-deo-thanh-cong.jpg") no-repeat center/cover;
+}
+
+/* App chính */
+.app {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+.number-spin {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+button {
+    padding: 14px 28px;
+    border-radius: 30px;
+    border: none;
+    font-size: 18px;
+    background: linear-gradient(135deg, #ff2d2d, #ffb300);
+    color: #fff;
+}
+
+/* Popup */
+.overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, .7);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 99;
+}
+
+.popup-frame {
+    width: 90%;
+    max-width: 360px;
+    background: url("images/bg.jpg") no-repeat center/contain;
+    padding: 140px 20px 30px;
+    text-align: center;
+}
+
+/* 🔴 KHUNG ĐỎ PHÓNG TO
+.money-frame {
+    width: 100%;
+    height: 160px;
+    background: linear-gradient(#d60000, #ff3b3b);
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 14px;
+    box-shadow: 0 0 20px rgba(255, 215, 0, .6);
+    box-shadow: none;
+} */
+
+.money-frame img {
+    max-width: 90%;
+    max-height: 120px;
+}
+
+/* Chữ vàng */
+.gold-text {
+    font-size: 18px;
+    color: #ffd700;
+    font-weight: bold;
+    margin-bottom: 16px;
+}
+
+canvas {
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+}
