@@ -1,25 +1,13 @@
-// const amounts = [5000, 10000, 20000, 50000, 100000, 200000, 500000];
 const amounts = [5000, 10000, 20000, 50000];
 const spinNumber = document.getElementById("spinNumber");
 const popup = document.getElementById("popup");
 const moneyImg = document.getElementById("moneyImg");
 const resultText = document.getElementById("resultText");
-// let isFirstSpin = true;
 
 document.getElementById("openBtn").onclick = () => {
     let count = 0;
     const spin = setInterval(() => {
-        // let v = amounts[Math.floor(Math.random() * amounts.length)];
-        // if (count === 20) {
-        //     if (isFirstSpin) {
-        //         const high = [100000, 200000, 500000];
-        //         v = high[Math.floor(Math.random() * high.length)];
-        //         isFirstSpin = false;
-        //     } else {
-        //         const low = [5000, 10000, 20000];
-        //         v = low[Math.floor(Math.random() * low.length)];
-        //     }
-        // }
+        const v = amounts[Math.floor(Math.random() * amounts.length)];
         spinNumber.textContent = v.toLocaleString() + " đ";
         count++;
         if (count > 20) {
